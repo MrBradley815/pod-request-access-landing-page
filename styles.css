@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
+
+:root {
+  --color-white: white;
+  --color-black: #121725;
+  --color-green: #54e6af;
+  --color-gray-1: #2c344b;
+  --color-gray-2: #5a668a;
+  --color-gray-3: #c2cbe5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Chivo', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  background: var(--color-black);
+  color: var(--color-gray-3);
+  padding: 120px 0px 120px 165px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.container {
+  height: 100%;
+  background-image: url('./assets/desktop/image-host.jpg');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo {
+  position: absolute;
+  top: -28px;
+  left: 0;
+}
+
+.signup-box {
+  padding: 90px 75px 0 0;
+  background: var(--color-black);
+  display: inline-block;
+}
+
+.title {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 52px;
+  line-height: 62px;
+  margin-bottom: 20px;
+  color: var(--color-white);
+}
+
+.signup p {
+  max-width: 445px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  margin-bottom: 55px;
+  padding: 5px;
+  display: inline-block;
+  background: var(--color-gray-1);
+  border-radius: 100px;
+  position: relative;
+}
+
+.email {
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 9px 24px;
+  color: var(--color-gray-3);
+}
+
+.button {
+  background: var(--color-green);
+  color: var(--color-black);
+  border: 0;
+  outline: none;
+  border-radius: 100px;
+  height: 100%;
+  padding: 14px 30px;
+  font-weight: bold;
+  transition: background .2s;
+}
+
+.button:hover {
+  cursor: pointer;
+  background: #b3ffe2;
+}
+
+.error {
+  position: absolute;
+  bottom: -20px;
+  left: 29px;
+  opacity: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fb3e3e;
+  transform: translateY(-10px);
+  transition: all .3s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(10px);
+}
+
+.podcast-logo:not(:last-child) {
+  margin-right: 25px;
+}
+
+.dots {
+  position: absolute;
+  bottom: -52px;
+  right: 0;
+}
